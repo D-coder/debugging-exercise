@@ -36,6 +36,8 @@
           matchedCards.push(card1, card2);
           card1.classList.add('is-matched');
           card2.classList.add('is-matched');
+        }else{
+          console.log('cards dont match');
         }
 
         // Regardless of whether or not the cards match, deselect them and reset
@@ -46,7 +48,7 @@
       }
 
       // If we've matched all the cards, display a message.
-      if (matchedCards.length > cards.length) {
+      if (matchedCards.length === cards.length) {
         alert('You matched all the cards, nice job!');
       }
     });
