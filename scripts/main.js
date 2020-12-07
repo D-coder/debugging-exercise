@@ -48,7 +48,8 @@
       }
 
       // If we've matched all the cards, display a message.
-      if (matchedCards.length === cards.length) {
+      if (matchedCards.length === cards.length)
+       {
         alert('You matched all the cards, nice job!');
       }
     });
