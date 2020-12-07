@@ -22,15 +22,17 @@
         card.classList.add('is-selected');
         selectedCards.push(card);
       }
-
+      console.log('printing selected cards',selectedCards);
       // If we have selected two cards, see if they match.
       if (selectedCards.length === 2) {
+        console.log('length of card is 2');
         var card1 = selectedCards[0];
-        var card2 = selectedCards[0];
+        var card2 = selectedCards[1];
 
         // If the cards match, add them to the collection of matched cards and
         // apply the correct CSS class.
         if (card1.innerText === card2.innerText) {
+          console.log('card 1 and 2 match');
           matchedCards.push(card1, card2);
           card1.classList.add('is-matched');
           card2.classList.add('is-matched');
